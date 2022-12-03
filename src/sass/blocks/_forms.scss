@@ -1,0 +1,32 @@
+.feed-form {
+	display: flex;
+	flex-direction: column;
+	width: 303px;
+	input {
+		height: 50px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 66px;
+		color: #4B4B4B;
+		border-radius: 5px;
+		padding: 0 20px;
+		border: none;
+		&:not(:last-child) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+	}
+	&_mt25 {
+		margin-top: 25px;
+	}
+	.error {
+		color: red;
+		
+
+	}
+}
+
+#consultation, #order, #thanks {
+	display: none;
+}

@@ -1,0 +1,30 @@
+.carousel {
+	padding: 81px 0 81px 0;
+}
+.slider {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 750px;
+	&__line {
+		display: flex;
+		transition: 1s all ease;
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	}
+}
+.prev {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	transform: translate(40%);
+}
+
+.next {
+	position: absolute;
+	right: 0;
+	top: 40%;
+	transform: translate(-40%);
+}

@@ -1,0 +1,42 @@
+.button {
+	background-color: $main-color;
+	color: #fff;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 19px;
+	border: none;
+	width: 153px;
+	height: 32px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	&_main {
+		width: 303px;
+		height: 54px;
+		font-size: 16px;
+		line-height: 25px;
+		margin-top: 15px;
+	}
+	&_mini {
+		width: 135px;
+		height: 44px;
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: $breakpoint_md) {
+	.button_main {
+		width: 260px;
+	}
+}
+@media (max-width: $breakpoint_xs) {
+	.button {
+		width: 140px;
+	&_main {
+		width: 260px;
+		
+	}
+		
+	}	
+}

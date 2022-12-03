@@ -1,4 +1,3 @@
-debugger;
 <?php 
 
 $name = $_POST['name'];

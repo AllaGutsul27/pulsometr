@@ -37,4 +37,8 @@
 			color: #FF0000;
 		}
 	}
+	&__icon_heart {
+		animation: heartbeat 1.3s ease 1s infinite;
+	}
+
 }

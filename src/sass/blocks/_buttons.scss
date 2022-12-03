@@ -1,4 +1,5 @@
 .button {
+	position: relative;
 	background-color: $main-color;
 	color: #fff;
 	font-weight: 500;
@@ -10,6 +11,21 @@
 	border-radius: 5px;
 	text-transform: uppercase;
 	cursor: pointer;
+	overflow: hidden;
+	&:after {
+		content: '';
+		width: 100%;
+		height: 200%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.5;
+		background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+		transform: translate(-100%, -25%) rotate(10deg);
+		transition: transform 0.55s;
+		filter: blur(10px);
+		animation: blick 5s infinite;
+	}
 	&_main {
 		width: 303px;
 		height: 54px;

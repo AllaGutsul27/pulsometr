@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pulse</title>
 	<link rel="stylesheet" href="css/font.css">
-	<link href="https://fonts.googleapis.com/css?family=MuseoModerno:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=MuseoModerno:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 
 
 </head>
 <body>
-	<div class="promo">
+	<div id="up" class="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo"><img src="icons/logo.png" alt="logo"></a>
@@ -65,7 +66,7 @@
 
 				</div>
 				<div class="advantages__item">
-					<img class="advantages__icon" src="icons/advantages/adv-2.png" alt="">
+					<img class="advantages__icon advantages__icon_heart " src="icons/advantages/adv-2.png" alt="">
 					<div class="advantages__subtitle">Заботимся о здоровье</div>
 					<div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
 				</div>
@@ -89,7 +90,7 @@
 			</form>
 		</div>
 	</section>
-	<section class="carousel">
+	<div class="carousel">
 		<div class="container">
 			<div class="slider">
 				<div class="slider__line">
@@ -102,7 +103,8 @@
 			<button class="next"><img src="img/carousel/arrow-right.png" alt=""></button>
 
 		</div>
-	</section>
+	</div>
+
 	<section class="catalog">
 		<div class="container">
 			<h2 class="title">Каталог пульсометров</h2>
@@ -112,10 +114,10 @@
 				<div data-tab-name="triatlon" class="catalog__tab"><div>для триатлона</div></div>
 			</div>
 			<div class="catalog__content">
-				<div class="catalog-item running">
+				<div class="animate__animated animate__fadeInLeft animate__delay-0.5s catalog-item running">
 					<div class="catalog-item__wrapper">
 						
-						<div class="catalog-item__content catalog-item__content_active">
+						<div class=" catalog-item__content catalog-item__content_active">
 							<img class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
 							<div class="catalog-item__subtitle">Running Polar FT1</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
@@ -144,11 +146,11 @@
 				</div>
 
 
-				<div class="catalog-item catalog-item_active fitness">
+				<div class="animate__animated animate__fadeInLeft animate__delay-0.5s catalog-item catalog-item_active fitness">
 					<div class="catalog-item__wrapper">
 				
 						<div class="catalog-item__content catalog-item__content_active">
-							<img id="pulsometr" class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
+							<img class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
 							<div class="catalog-item__subtitle">Fitness Polar FT1</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
@@ -179,11 +181,11 @@
 				
 				
 				</div>
-				<div class="catalog-item running">
+				<div class="animate__animated animate__fadeInLeft animate__delay-1.5s catalog-item running">
 					<div class="catalog-item__wrapper">
 				
 						<div class="catalog-item__content catalog-item__content_active">
-							<img id="pulsometr" class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
+							<img class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
 							<div class="catalog-item__subtitle">Running Polar FT1</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
@@ -214,11 +216,11 @@
 				
 				
 				</div>
-				<div class="catalog-item triatlon">
+				<div class="animate__animated animate__fadeInLeft animate__delay-0.5s catalog-item triatlon">
 					<div class="catalog-item__wrapper">
 				
 						<div class="catalog-item__content catalog-item__content_active">
-							<img id="pulsometr" class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
+							<img class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
 							<div class="catalog-item__subtitle">Triatlon Polar FT1</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
@@ -244,11 +246,11 @@
 						<button class="button button_mini">купить</button>
 					</div>
 				</div>
-				<div class="catalog-item running">
+				<div class="animate__animated animate__fadeInLeft animate__delay-2.5s catalog-item running">
 					<div class="catalog-item__wrapper">
 				
 						<div class="catalog-item__content catalog-item__content_active">
-							<img id="pulsometr" class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
+							<img class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
 							<div class="catalog-item__subtitle">Running Polar FT1</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
@@ -279,11 +281,11 @@
 				
 				
 				</div>
-				<div class="catalog-item running">
+				<div class="animate__animated animate__fadeInLeft animate__delay-3.5s catalog-item running">
 					<div class="catalog-item__wrapper">
 				
 						<div class="catalog-item__content catalog-item__content_active">
-							<img id="pulsometr" class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
+							<img class="catalog-item__img" src="img/catalog/pulsometr.png" alt="pulsometr">
 							<div class="catalog-item__subtitle">Running Polar FT1</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
@@ -308,20 +310,16 @@
 						</div>
 						<button class="button button_mini">купить</button>
 					</div>
-				
-				
-				
-				
-				
+			
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="reviews">
+	<div class="reviews">
 		<div class="container">
-			<div class="title">отзывы клиентов</div>
-			<div class="review">
+			<div class="animate__animated animate__fadeInUp title">отзывы клиентов</div>
+			<div class="animate__animated review">
 				<div class="review__img">
 					<img src="img/reviews/photo_1.jpg" alt="">
 				</div>
@@ -334,7 +332,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="review">
+			<div class="review animate__animated">
 				<div class="review__img">
 					<img src="img/reviews/photo_2.jpg" alt="">
 				</div>
@@ -350,7 +348,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="review">
+			<div class="review animate__animated">
 				<div class="review__img">
 					<img src="img/reviews/photo_3.jpg" alt="">
 				</div>
@@ -365,11 +363,11 @@
 			</div>
 
 		</div>
-	</section>
+	</div>
 	<footer class="footer">
-		<iframe
+		<iframe 
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.926577385013!2d25.9172520155327!3d48.2657874792338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47340f4c6e1d0ffb%3A0x24c595dce2f8bdec!2z0LLRg9C70LjRhtGPINCg0ZbQstC90LXQvdGB0YzQutCwLCAxMCwg0KfQtdGA0L3RltCy0YbRliwg0KfQtdGA0L3RltCy0LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTgwMDA!5e0!3m2!1suk!2sua!4v1669489009055!5m2!1suk!2sua"
-			width="100%" height="630" style="border:0;" allowfullscreen="true" loading="lazy"
+			allow="fullscreen" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade"></iframe>
 		
 		<div class="footer__info">
@@ -416,6 +414,9 @@
 			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
 		</div>
 	</div>
+	<a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
+	
+	
 
 	<script src="js/inputmask.min.js"></script>
 	<script src="js/jquery-3.6.1.min.js"></script>

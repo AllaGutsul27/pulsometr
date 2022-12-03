@@ -208,7 +208,6 @@ validateForms('#order form');
 
 
 //Send
-debugger;
 $('form').submit(function(e) {
 	e.preventDefault();
 	if (!$(this).valid()) {
@@ -227,3 +226,27 @@ $('form').submit(function(e) {
 	});
 	return false;
 });
+
+//Scroll
+
+let pageup = document.querySelector('.pageup');
+
+window.addEventListener('scroll', function () {
+	if (window.scrollY >= 1200) {
+		pageup.style.display = 'block';
+	} else {
+		pageup.style.display = 'none';
+	};
+});	
+
+let reviews = document.querySelectorAll('.review');
+console.log(window.scrollY)
+
+window.addEventListener('scroll', function () {
+	if (window.scrollY >= 2900) {
+		reviews.forEach((item) => {
+			item.classList.add('animate__fadeInUp');
+			// item[index].classList.add('animate__delay-${[index]+0.5}s');
+		})
+	}
+ });
